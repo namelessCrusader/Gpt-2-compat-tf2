@@ -34,10 +34,15 @@ See [DEVELOPERS.md](./DEVELOPERS.md).
 
 ## Installation
 0.git clone https://github.com/namelessCrusader/Gpt-2-compat-tf2/edit/master/
+
 1.python/python3 download_model.py 117M/335M/etc.
+
 2.pip install tensorflow(if you don't have V2.0, this package uses Tensorflow 2.0 so you a want to)
+
 3.pip install -r requirements.txt
+
 4.cd src
+
 5.python/python3 generate_unconditional_samples.py/interactive_conditional_samples.py
 
 ## Contributors
