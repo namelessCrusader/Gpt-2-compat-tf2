@@ -8,7 +8,7 @@ import tensorflow as tf
 import model, sample, encoder
 
 def sample_model(
-    model_name='124M',
+    model_name='117M',
     seed=None,
     nsamples=1,
     batch_size=1,
