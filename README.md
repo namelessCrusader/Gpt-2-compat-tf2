@@ -4,15 +4,14 @@
 
 Code and models from the paper ["Language Models are Unsupervised Multitask Learners"](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf).
 
-You can read about GPT-2 and its staged release in our [original blog post](https://blog.openai.com/better-language-models/), [6 month follow-up post](https://openai.com/blog/gpt-2-6-month-follow-up/), and [final post](https://www.openai.com/blog/gpt-2-1-5b-release/).
+You can read about GPT-2 and its staged release in [original blog post](https://blog.openai.com/better-language-models/), [6 month follow-up post](https://openai.com/blog/gpt-2-6-month-follow-up/), and [final post](https://www.openai.com/blog/gpt-2-1-5b-release/).
 
-We have also [released a dataset](https://github.com/openai/gpt-2-output-dataset) for researchers to study their behaviors.
-
-<sup>*</sup> *Note that our original parameter counts were wrong due to an error (in our previous blog posts and paper).  Thus you may have seen small referred to as 117M and medium referred to as 345M.*
+They have also [released a dataset](https://github.com/openai/gpt-2-output-dataset) for researchers to study their behaviors.
 
 ## Usage
 
 This repository is meant to be a starting point for researchers and engineers to experiment with GPT-2.
+This repository adds compatibility for GPT-2 for tensorflow 2.0 and above.
 
 For basic information, see our [model card](./model_card.md).
 
@@ -22,28 +21,18 @@ For basic information, see our [model card](./model_card.md).
 - The dataset our GPT-2 models were trained on contains many texts with [biases](https://twitter.com/TomerUllman/status/1101485289720242177) and factual inaccuracies, and thus GPT-2 models are likely to be biased and inaccurate as well.
 - To avoid having samples mistaken as human-written, we recommend clearly labeling samples as synthetic before wide dissemination.  Our models are often incoherent or inaccurate in subtle ways, which takes more than a quick read for a human to notice.
 
-### Work with us
-
-Please [let us know](mailto:languagequestions@openai.com) if you’re doing interesting research with or working on applications of GPT-2!  We’re especially interested in hearing from and potentially working with those who are studying
-- Potential malicious use cases and defenses against them (e.g. the detectability of synthetic text)
-- The extent of problematic content (e.g. bias) being baked into the models and effective mitigations
-
-## Development
-
-See [DEVELOPERS.md](./DEVELOPERS.md).
-
 ## Installation
-0.git clone https://github.com/namelessCrusader/Gpt-2-compat-tf2/edit/master/
+0. git clone https://github.com/namelessCrusader/Gpt-2-compat-tf2/edit/master/
 
-1.python/python3 download_model.py 117M/335M/etc.
+1. python/python3 download_model.py 117M/335M/etc.
 
-2.pip install tensorflow(if you don't have V2.0, this package uses Tensorflow 2.0 so you a want to)
+2. pip install tensorflow(if you don't have V2.0, this package add compatibility for Tensorflow 2.0)
 
-3.pip install -r requirements.txt
+3. pip install -r requirements.txt
 
-4.cd src
+4. cd src
 
-5.python/python3 generate_unconditional_samples.py/interactive_conditional_samples.py
+5. python/python3 generate_unconditional_samples.py/interactive_conditional_samples.py
 
 ## Contributors
 
@@ -59,12 +48,6 @@ Please use the following bibtex entry:
   year={2019}
 }
 ```
-
-## Future work
-
-We may release code for evaluating the models on various benchmarks.
-
-We are still considering release of the larger models.
 
 ## License
 
